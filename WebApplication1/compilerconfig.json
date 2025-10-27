@@ -1,0 +1,10 @@
+﻿[
+  {
+    "outputFile": "assets/sass/reset/_mobilemenu.css",
+    "inputFile": "assets/sass/reset/_mobilemenu.scss"
+  },
+  {
+    "outputFile": "assets/sass/style.css",
+    "inputFile": "assets/sass/style.scss"
+  }
+]

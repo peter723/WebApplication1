@@ -1,0 +1,376 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WebApplication1.Pages.Site" %>
+
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" dir="rtl">
+
+
+
+    <head>
+            <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>المعيار الأمثل</title>
+    <meta name="author" content="المعيار الأمثل">
+    <meta name="description" content="شركة المعيار الأمثل لاختبارات الجودة ">
+    <meta name="keywords" content="شركة المعيار الأمثل لاختبارات الجودة ">
+    <meta name="robots" content="شركة المعيار الأمثل لاختبارات الجودة ">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicons - Place favicon.ico in the root directory -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/assets/img/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/assets/img/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--==============================
+Google Fonts
+	============================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+    <!--==============================
+  All CSS File
+	============================== -->
+    <!--==============================
+  All CSS File
+	============================== -->
+    <!-- Bootstrap -->
+
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Fontawesome Icon -->
+
+    <link href="/assets/css/fontawesome.min.css" rel="stylesheet" />
+
+    <!-- Magnific Popup -->
+
+    <link href="/assets/css/magnific-popup.min.css" rel="stylesheet" />
+
+    <!-- Swiper css -->
+
+    <link href="/assets/css/swiper-bundle.min.css" rel="stylesheet" />
+
+
+    <!-- Theme Custom CSS -->
+
+    <link href="/assets/css/style.css" rel="stylesheet" />
+         <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+  </head>
+
+ 
+
+
+
+            
+    <body>
+
+    <!--[if lte IE 9]>
+    	<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  	<![endif]-->
+
+
+    <!--********************************
+   		Code Start From Here 
+	******************************** -->
+
+    <!-- <div class="cursor-follower"></div> -->
+
+    <!-- slider drag cursor -->
+    <div class="slider-drag-cursor d-flex align-items-center justify-content-between">
+        <span class="drag-icon-left">
+            <img src="/assets/img/icon/drag-arrow-left.svg" alt=""></span>
+
+        <span class="drag-icon-right">
+            <img src="/assets/img/icon/drag-arrow-right.svg" alt="">
+        </span>
+    </div>
+
+
+    <!--==============================
+     Preloader
+  ==============================-->
+    <div class="preloader ">
+
+        <div class="preloader-inner">
+            <img src="/assets/V1.svg" alt="img">
+            <span class="loader"></span>
+        </div>
+    </div>
+
+
+    <!--==============================
+    Mobile Menu
+  ============================== -->
+    <div class="th-menu-wrapper onepage-nav">
+        <div class="th-menu-area text-center">
+            <button class="th-menu-toggle">
+                <i class="fal fa-times"></i></button>
+            <div class="mobile-logo">
+                <a href="/Pages/default.aspx">
+                    <img height="60px" width="60px" src="/assets/V1.svg" alt="Atek">
+                </a>
+            </div>
+            <div class="th-mobile-menu">
+                <ul>
+
+                    <asp:Literal ID="Litheadermobile" runat="server">
+</asp:Literal>
+
+                       <!-- Contact Us link (added manually) -->
+    <li class="mobile-contact-link">
+      <a href="/Pages/contact-us.aspx">
+         تواصل معنا
+      </a>
+    </li>
+   </ul>
+                   
+            </div>
+
+        </div>
+    </div>
+    <!--==============================
+	Header Area
+==============================-->
+    <header class="th-header header-layout1 header-layout11">
+        <div class="sticky-wrapper">
+            <!-- Main Menu Area -->
+<div class="menu-area">
+  <div class="container th-container3">
+    <div class="row align-items-center justify-content-between">
+           <!-- Mobile Menu Toggle -->
+   <div class="col-auto d-md-none">
+     <button class="th-menu-toggle th-menu-btn" type="button">
+       <i class="fal fa-bars"></i>
+     </button>
+   </div>
+       <!-- Contact Button -->
+    <div class="col-auto d-none d-md-block">
+      <div class="header-button">
+        <a href="/Pages/contact-us.aspx" class="th-btn style2 th-radius th-icon">
+          تواصل معنا <i class="fa-light fa-arrow-right-long"></i>
+        </a>
+      </div>
+    </div>
+
+      <!-- Desktop Menu -->
+      <div class="col d-none d-md-block text-center">
+        <nav class="main-menu">
+          <ul>
+            <asp:Literal ID="Litheader" runat="server"></asp:Literal>
+          </ul>
+        </nav>
+      </div>
+
+   
+
+  
+           <div class="col-auto">
+
+     <div class="header-logo">
+       <a href="/Pages/default.aspx">
+         <img height="60" width="60" src="/assets/V1.svg" alt="Atek">
+       </a>
+     </div>
+   </div>
+    </div>
+  </div>
+</div>
+        </div>
+
+    </header>
+           <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    
+   
+    <!--==============================
+	Footer Area
+==============================-->
+    <footer class="footer-wrapper bg-title footer-layout2 footer-layout5 " data-bg-src="/assets/img/bg/footer_bg-2.png">
+
+        <div class="widget-area f-widget8">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-md-6 col-xl-3">
+                        <div class="widget footer-widget">
+                            <div class="th-widget-about">
+                                <div class="about-logo">
+                                    <a href="index.html">
+                                        <img height="60 px" width="60 px" src="/assets/V1.svg" alt="Atek">
+                                    </a>
+                                </div>
+                                <!--
+                                <div class="th-social">
+                                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+                                    <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="https://www.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+                                    <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+                                </div>
+                                -->
+                            </div>
+                        </div>
+                    </div>
+                    <!--
+                    <div class="col-md-6 col-xl-auto">
+                        <div class="widget widget_nav_menu footer-widget ps-xxl-2 ms-xxl-3">
+                            <h3 class="widget_title">Useful Link</h3>
+                            <div class="menu-all-pages-container">
+                                <ul class="menu">
+
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">About us</a></li>
+                                    <li><a href="service.html">Our Service</a></li>
+                                    <li><a href="contact.html">Terms of Service</a></li>
+                                    <li><a href="service.html">News & Media</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    -->
+                    <div class="col-md-6 col-xl-auto">
+                        <div class="widget footer-widget ps-xxl-3 ms-xxl-4">
+                            <h3 class="widget_title">تواصل معنا </h3>
+                            <div class="th-widget-contact">
+                                <div class="info-box_text">
+                                    <div class="icon">
+                                        <img src="/assets/img/icon/phone.svg" alt="img">
+                                    </div>
+                                    <div class="details">
+                                        <p><a href="https://api.whatsapp.com/send/?phone=966530989332&text=Hello+there%21&type=phone_number&app_absent=0" class="info-box_link">+966 530 989 332</a></p>
+                                    </div>
+                                </div>
+                                <div class="info-box_text">
+                                    <div class="icon">
+                                        <img src="/assets/img/icon/envelope.svg" alt="img">
+                                    </div>
+                                    <div class="details">
+                                        <p><a href="mailto:info@otimalstandrd.com" class="info-box_link">info@otimalstandrd.com</a></p>
+
+                                    </div>
+                                </div>
+                                <!--<div class="info-box_text">
+                                    <div class="icon"><img src="/assets/img/icon/location-dot.svg" alt="img"></div>
+                                    <div class="details">
+                                        <p>789 Inner Lane, Holy park, California, USA</p>
+                                    </div>
+                                </div>
+                            -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <div class="widget mb-0 footer-widget ps-xxl-3 ms-xxl-4">
+                            <h4 class="widget_title ">الاشتراك بالنشرة الشهرية</h4>
+                            <div class="newsletter-widget">
+                                <div class="footer-search-contact mt-30">
+                                    <form>
+                                        <input class="form-control" type="email" placeholder="ادخل البريد الالكتروني">
+                                    </form>
+                                    <div class="footer-btn mt-20">
+                                        <button type="submit" class="th-btn btn-fw th-radius style1">
+                                            الاشتراك الان
+                                            <img src="/assets/img/icon/regular-plane.svg" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-wrap">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-lg-6">
+                        <p class="copyright-text">Copyright 2025 <a href="index.html">Atek</a>. All Rights Reserved.</p>
+                    </div>
+                    <div class="col-lg-6 text-center text-lg-end">
+                        <div class="footer-links">
+                            <ul>
+                                <li><a href="about.html">Terms &amp; Conditions</a></li>
+                                <li><a href="about.html">Careers</a></li>
+                                <li><a href="about.html">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--********************************
+			Code End  Here 
+	******************************** -->
+
+    <!-- Scroll To Top -->
+    <div class="scroll-top">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;">
+            </path>
+        </svg>
+    </div>
+
+    <!--==============================
+    All Js File
+============================== -->
+    <!-- Jquery -->
+    <script src="/assets/js/vendor/jquery-3.7.1.min.js"></script>
+
+    <!-- Swiper Js -->
+    <script src="/assets/js/swiper-bundle.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <!-- Magnific Popup -->
+    <script src="/assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- Counter Up -->
+    <script src="/assets/js/jquery.counterup.min.js"></script>
+    <!-- circle-progress -->
+    <script src="/assets/js/circle-progress.js"></script>
+    <!-- Range Slider -->
+    <script src="/assets/js/jquery-ui.min.js"></script>
+    <!-- imagesloaded -->
+    <script src="/assets/js/imagesloaded.pkgd.min.js"></script>
+    <!-- isotope -->
+    <script src="/assets/js/isotope.pkgd.min.js"></script>
+
+    <!-- nice select -->
+    <script src="/assets/js/nice-select.min.js"></script>
+    <!-- wow -->
+    <script src="/assets/js/wow.min.js"></script>
+    <!-- gsap -->
+    <script src="/assets/js/gsap.min.js"></script>
+    <script src="/assets/js/lenis.min.js"></script>
+    <script src="/assets/js/ScrollTrigger.min.js"></script>
+    <script src="/assets/js/SplitText.js"></script>
+
+
+
+
+    <!-- Main Js File -->
+    <script src="/assets/js/main.js"></script>
+</body>
+
+
+    </html>

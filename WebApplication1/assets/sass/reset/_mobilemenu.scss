@@ -1,0 +1,175 @@
+﻿/* --------------------
+   Mobile Menu Wrapper (Arabic Static)
+-------------------- */
+.th-menu-wrapper {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0,.7);
+    z-index: 999999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease 0.8s;
+
+    &.th-body-visible {
+        opacity: 1;
+        visibility: visible;
+
+        .th-menu-area {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(0);
+        }
+    }
+    /* Logo */
+    .mobile-logo {
+        padding: 40px 0 30px;
+        display: block;
+        text-align: center;
+        background-color: $title-color;
+
+        svg,
+        img {
+            max-width: 180px;
+            height: auto;
+            filter: brightness(0) invert(1);
+        }
+    }
+    /* Toggle Button (right side for Arabic) */
+    .th-menu-toggle {
+        border: none;
+        font-size: 18px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 33px;
+        height: 33px;
+        cursor:pointer;
+        border-radius: 50%;
+        color: $white-color;
+        background-color: $title-color;
+        z-index: 2;
+        transition: all 0.3s ease;
+
+        &:hover {
+            opacity: 0.6; // fade on hover
+        }
+    }
+    /* Menu Drawer */
+    .th-menu-area {
+        width: 100%;
+        max-width: 310px;
+        background-color: $white-color;
+        height: 100%;
+        position: relative;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(110%);
+        transition: all ease 0.6s;
+    }
+}
+.th-menu-toggle.th-menu-btn {
+    background: none;
+    border: none;
+    color: #fff; // white bars
+    font-size: 24px;
+    cursor: pointer;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+    padding: 8px;
+
+    &:hover {
+        opacity: 0.6; // fade on hover
+    }
+
+    i {
+        font-size: 26px; // icon size
+        line-height: 1;
+    }
+
+    @media (min-width: 768px) {
+        display: none; // hide on desktop
+    }
+}
+
+/* --------------------
+   Mobile Menu Content
+-------------------- */
+.th-mobile-menu {
+    overflow-y: auto;
+    max-height: calc(100vh - 200px);
+    padding: 33px 0 40px;
+    cursor: pointer;
+    text-align: right;
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0 40px;
+
+        li {
+            border-bottom: 1px solid $smoke-color2;
+            cursor: pointer;
+
+
+            &:first-child {
+                border-top: 1px solid $smoke-color2;
+            }
+
+            a {
+                display: block;
+                padding: 12px 0;
+                font-size: 16px;
+                cursor: pointer;
+                text-transform: capitalize;
+                color: $title-color;
+                transition: color 0.3s ease;
+
+                &:hover {
+                    color: $theme-color;
+                }
+            }
+
+            &.th-active > a {
+                color: $theme-color;
+                font-weight: 600;
+            }
+        }
+
+        .menu-item-has-children {
+            > a {
+                position: relative;
+
+                .th-mean-expand {
+                    position: absolute;
+                    top: 50%;
+                    left: 0; // for Arabic, icon on left
+                    transform: translateY(-50%);
+                    font-size: 12px;
+                    width: 25px;
+                    height: 25px;
+                    line-height: 25px;
+                    border-radius: 50%;
+                    background-color: $smoke-color;
+                    color: $title-color;
+                    text-align: center;
+                    transition: background 0.3s ease;
+
+                    &:hover {
+                        background-color: $theme-color;
+                        color: $white-color;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 400px) {
+        > ul {
+            padding: 0 20px;
+        }
+
+        .th-menu-wrapper .th-menu-area {
+            max-width: 270px;
+        }
+    }
+}

@@ -3,6 +3,11 @@
     position: relative;
     z-index: 2;
     overflow: hidden;
+    /* Full height on large screens only */
+    @media (min-width: 1200px) {
+        height: 95vh;
+    }
+ 
 }
 
 .th-hero-bg {

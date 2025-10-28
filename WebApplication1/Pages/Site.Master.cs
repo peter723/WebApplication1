@@ -35,7 +35,7 @@ namespace WebApplication1.Pages
                                 Litheader.Text += " <li class='menu-item mega-menu-wrap'>";
                                 Litheader.Text += "<a class='text-white ' href='" + Link + "'>" + title + "</a>";
                                 Litheader.Text += "</li>";
-                                Litheadermobile.Text += " <li class='menu-item'>";
+                                Litheadermobile.Text += " <li class='menu-item text-end'>";
                                 Litheadermobile.Text += "<a href='" + Link + "'>" + title + "</a>";
                                 Litheadermobile.Text += "</li>";
 

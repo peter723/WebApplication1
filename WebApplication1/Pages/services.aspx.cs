@@ -38,17 +38,19 @@ namespace WebApplication1.Pages
                                 title = reader["Title_AR"].ToString();
                                 Link = reader["Pic_URL"].ToString();
                                 description = reader["Description_AR"].ToString();
-                                Services.Text += "<div class=\"col-xl-3 col-md-6\">";
-                                Services.Text += "<div class=\"service-box service-style-1\">";
+                                Services.Text += "<div class=\"col-xl-3 col-md-6 d-flex\">";
+                                Services.Text += "<div class=\"service-box service-style-1  h-100 flex-fill d-flex flex-column\">";
+
                                 Services.Text += "<div class=\"service-img\">";
                                 Services.Text += "<a href=\"service-details.html\">";
-                                Services.Text += "<img src='" + Link + "'>";
+                                Services.Text += "<img src='" + Link + "' class='card-img-top img-fluid' />";
                                 Services.Text += "</a>";
                                 Services.Text += "</div>";
-                                Services.Text += "<div class=\"service-content\">";
-                                Services.Text += "<h3 class=\"box-title\">";
-                                Services.Text += "<a href=\"service-details.html\">" + title + "</a></h3>";
-                                Services.Text += "<p class=\"service-box_text\">" + description + "</p></div></div></div>";
+
+                                Services.Text += "<div class=\"service-content card-body d-flex flex-column\">";
+                                Services.Text += "<h3 class=\"box-title mb-2\"><a href=\"service-details.html\">" + title + "</a></h3>";
+                                Services.Text += "<p class=\"service-box_text mb-3 flex-grow-1\">" + description + "</p>";
+                                Services.Text += "</div></div></div>";
 
                             }
 

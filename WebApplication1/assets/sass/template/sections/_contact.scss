@@ -710,20 +710,20 @@
                 padding: 40px 0;
 
                 &:not(:last-child) {
-                    padding-right: 56px;
-                    border-right: 3px solid $white-color;
+                    padding-left: 56px;
+                    border-left: 3px solid $white-color;
 
                     @include xl {
-                        padding-right: 22px;
+                        padding-left: 22px;
                     }
 
                     @include lg {
-                        border-right: 0;
+                        border-left: 0;
                         border-bottom: 3px solid var(--white-color);
                     }
 
                     @include sm {
-                        padding-right: 0;
+                        padding-left: 0;
                     }
                 }
             }
@@ -790,7 +790,6 @@
             }
         }
     }
-
 }
 
 /*------------------- contact inner style-2 end here -------------*/

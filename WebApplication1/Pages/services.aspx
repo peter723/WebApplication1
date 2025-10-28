@@ -19,17 +19,16 @@ Service Area
         <div class="container">
             <div class="row justify-content-between">
                 <div class="col-lg-8">
-                    <div class="title-area service-3-titlebox text-center text-md-start">
+                    <div class="title-area service-3-titlebox text-center text-md-end">
                         <span class="sub-title ">خدماتنا </span>
                         <h2 class="sec-title ">خدماتنا ستمنحك النجاح</h2>
                     </div>
-
                 </div>
                 <div class="col-lg-4">
                 </div>
             </div>
             <div class="service-area">
-<div class="row gy-30 justify-content-center align-items-stretch  ">
+                <div class="row gy-30 justify-content-center">
                <asp:Literal ID="Services" runat="server">
 
                </asp:Literal>

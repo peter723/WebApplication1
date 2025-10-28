@@ -44,7 +44,7 @@ Contact Area
                         </div>
                     </div>
                 </div>
-                <div class="contact-infobox-bottom d-xl-flex align-items-center justify-content-between">
+                <div class="contact-infobox-bottom d-xl-flex align-items-center justify-content-around">
                     <div class="about-contact-grid inner-style">
                         <span class="about-contact-icon">
                             <i class="fa-solid fa-headphones-simple"></i>
@@ -70,7 +70,7 @@ Contact Area
 
                 </div>
             </div>
-         
+
             <div class="contact-form-wrapp2">
                 <div class="row">
                     <div class="col-xl-7 order-1 order-xl-0">
@@ -79,50 +79,48 @@ Contact Area
                                 <div class="row">
                                     <div class="col-sm-6 form-group">
                                         <asp:TextBox CssClass="form-control" ID="TXTName" runat="server" placeholder="اسم مقدم الطلب"></asp:TextBox>
-                                        
+
+                                    <asp:RequiredFieldValidator ID="RequiredFieldName" Display="Dynamic" Style="margin-right: 10px" CssClass="text-danger" runat="server" ControlToValidate="TXTName" ErrorMessage="الحقل اجباري"></asp:RequiredFieldValidator>
                                     </div>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldName"  Display="Dynamic" style="margin-right:10px" CssClass="alert alert-danger" Width="45%" runat="server" ControlToValidate="TXTName" ErrorMessage="الحقل اجباري"></asp:RequiredFieldValidator>
                                     <div class="col-sm-6 form-group">
                                         <asp:TextBox CssClass="form-control" ID="TXTEmail" runat="server" placeholder="البريد الإلكتروني"></asp:TextBox>
-
-
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" Display="Dynamic" Style="margin-right: 10px" CssClass="text-danger"  runat="server" ControlToValidate="TXTEmail" ErrorMessage="الحقل اجباري"></asp:RequiredFieldValidator>
                                     </div>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1"  Display="Dynamic" style="margin-right:10px" CssClass="alert alert-danger" Width="45%" runat="server" ControlToValidate="TXTEmail" ErrorMessage="الحقل اجباري"></asp:RequiredFieldValidator>
                                     <div class="col-sm-6 form-group">
                                         <asp:TextBox CssClass="form-control" ID="TXTNumber" runat="server" placeholder="رقم الجوال"></asp:TextBox>
 
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" Display="Dynamic" Style="margin-right: 10px" CssClass="text-danger" runat="server" ControlToValidate="TXTNumber" ErrorMessage="الحقل اجباري"></asp:RequiredFieldValidator>
                                     </div>
-                                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" Display="Dynamic" style="margin-right:10px" CssClass="alert alert-danger" Width="45%" runat="server" ControlToValidate="TXTNumber" ErrorMessage="الحقل اجباري"></asp:RequiredFieldValidator>
 
 
                                     <div class="col-sm-6 form-group">
                                         <asp:TextBox CssClass="form-control" ID="TXTSubject" runat="server" placeholder="عنوان الرسالة"></asp:TextBox>
 
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" Display="Dynamic" Style="margin-right: 10px" CssClass="text-danger text-start"  runat="server" ControlToValidate="TXTSubject" ErrorMessage="الحقل اجباري"></asp:RequiredFieldValidator>
                                     </div>
-                                          <asp:RequiredFieldValidator ID="RequiredFieldValidator3" Display="Dynamic" style="margin-right:10px" CssClass="alert alert-danger" Width="45%" runat="server" ControlToValidate="TXTSubject" ErrorMessage="الحقل اجباري"></asp:RequiredFieldValidator>
-                                           
+
                                     <div class="form-group col-12">
 
-                                        <asp:TextBox CssClass="form-control" ID="TXTmessage" TextMode="MultiLine" runat="server" Rows="5" placeholder="نص الرسالة"></asp:TextBox>                           
+                                        <asp:TextBox CssClass="form-control" ID="TXTmessage" TextMode="MultiLine" runat="server" Rows="5" placeholder="نص الرسالة"></asp:TextBox>
+                                    <asp:RequiredFieldValidator Display="Dynamic" Style="margin-right: 10px" CssClass="text-danger" Width="100%" ForeColor="Red" ID="RequiredFieldValidator4" runat="server" ControlToValidate="TXTmessage" ErrorMessage="الحقل اجباري"></asp:RequiredFieldValidator>
                                     </div>
 
-                                         <asp:RequiredFieldValidator Display="Dynamic" style="margin-right:10px" CssClass="alert alert-danger" Width="100%" ForeColor="Red" ID="RequiredFieldValidator4" runat="server" ControlToValidate="TXTmessage" ErrorMessage="الحقل اجباري"></asp:RequiredFieldValidator>
 
-                                  <div class="form-btn col-12 d-flex justify-content-end mt-3">                                        <div class="col-3">
+                                    <div class="form-btn col-12 d-flex justify-content-end mt-3">
+                                        <div class="col-3">
 
-    <asp:Button ID="Send" runat="server" 
-        CssClass="th-btn sendbutton " 
-        Text="ارسال الطلب" 
-        OnClick="Send_Click" />
-             </div>
-                         
-</div>
+                                            <asp:Button ID="Send" runat="server"
+                                                CssClass="th-btn sendbutton "
+                                                Text="ارسال الطلب"
+                                                OnClick="Send_Click" />
+                                        </div>
+                                    </div>
                                 </div>
-                               <div id="text" runat="server" visible="false" class="alert alert-success">
-                                     تم ارسال الطلب
-                               </div>
-                                  
-                              
+                                <div id="text" runat="server" visible="false" class="alert alert-success">
+                                    تم ارسال الطلب
+                                </div>
+
+
 
                             </form>
 
@@ -136,7 +134,7 @@ Contact Area
                 </div>
             </div>
 
-           
+
         </div>
     </div>
 

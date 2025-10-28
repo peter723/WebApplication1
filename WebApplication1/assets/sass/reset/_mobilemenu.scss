@@ -1,5 +1,5 @@
 ﻿/* --------------------
-   Mobile Menu Wrapper (Arabic Static)
+   Mobile Menu Wrapper (Left Open)
 -------------------- */
 .th-menu-wrapper {
     position: fixed;
@@ -15,9 +15,9 @@
         visibility: visible;
 
         .th-menu-area {
+            transform: translateX(0); // drawer slides in from left
             opacity: 1;
             visibility: visible;
-            transform: translateX(0);
         }
     }
     /* Logo */
@@ -34,16 +34,16 @@
             filter: brightness(0) invert(1);
         }
     }
-    /* Toggle Button (right side for Arabic) */
+    /* Toggle Button (left side for LTR) */
     .th-menu-toggle {
         border: none;
         font-size: 18px;
         position: absolute;
         top: 10px;
-        left: 10px;
+        right: 10px; // move toggle to right for LTR
         width: 33px;
         height: 33px;
-        cursor:pointer;
+        cursor: pointer;
         border-radius: 50%;
         color: $white-color;
         background-color: $title-color;
@@ -55,22 +55,26 @@
         }
     }
     /* Menu Drawer */
+    /* Menu Drawer */
     .th-menu-area {
         width: 100%;
-        max-width: 310px;
         background-color: $white-color;
         height: 100%;
-        position: relative;
+        position: fixed; // make it fixed so it sticks to left
+        top: 0;
+        left: 0; // stick to left
         opacity: 0;
         visibility: hidden;
-        transform: translateX(110%);
+        transform: translateX(-110%); // offscreen LEFT
         transition: all ease 0.6s;
+        z-index: 100000; // ensure above content
     }
 }
+
 .th-menu-toggle.th-menu-btn {
     background: none;
     border: none;
-    color: #fff; // white bars
+    color: #fff;
     font-size: 24px;
     cursor: pointer;
     opacity: 0.9;
@@ -78,16 +82,16 @@
     padding: 8px;
 
     &:hover {
-        opacity: 0.6; // fade on hover
+        opacity: 0.6;
     }
 
     i {
-        font-size: 26px; // icon size
+        font-size: 26px;
         line-height: 1;
     }
 
     @media (min-width: 768px) {
-        display: none; // hide on desktop
+        display: none;
     }
 }
 
@@ -99,7 +103,7 @@
     max-height: calc(100vh - 200px);
     padding: 33px 0 40px;
     cursor: pointer;
-    text-align: right;
+    text-align: left; // change to left for LTR
 
     ul {
         list-style: none;
@@ -109,7 +113,6 @@
         li {
             border-bottom: 1px solid $smoke-color2;
             cursor: pointer;
-
 
             &:first-child {
                 border-top: 1px solid $smoke-color2;
@@ -142,7 +145,7 @@
                 .th-mean-expand {
                     position: absolute;
                     top: 50%;
-                    left: 0; // for Arabic, icon on left
+                    right: 0; // icon on the right for LTR
                     transform: translateY(-50%);
                     font-size: 12px;
                     width: 25px;

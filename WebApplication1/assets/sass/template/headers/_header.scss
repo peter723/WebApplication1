@@ -372,9 +372,7 @@
         margin-left: 10px;
         padding: 15px 29px;
 
-        @include xl {
-            display: none;
-        }
+        
     }
 
     .icon-btn {
@@ -671,9 +669,7 @@
             }
 
             .th-btn {
-                &:after {
-                    display: none;
-                }
+                
             }
         }
     }

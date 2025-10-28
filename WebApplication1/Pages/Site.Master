@@ -21,6 +21,10 @@
     <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+          <!-- ✅ Site Icon (Favicon) -->
+    <link rel="icon" type="image/svg+xml" href="/assets/V1.svg">
+    <link rel="shortcut icon" href="/assets/V1.svg" type="image/svg+xml">
+
     <!-- Favicons - Place favicon.ico in the root directory -->
     <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicons/apple-icon-60x60.png">
@@ -138,7 +142,7 @@ Google Fonts
 </asp:Literal>
 
                        <!-- Contact Us link (added manually) -->
-    <li class="mobile-contact-link">
+    <li class="mobile-contact-link text-end">
       <a href="/Pages/contact-us.aspx">
          تواصل معنا
       </a>
@@ -158,7 +162,27 @@ Google Fonts
 <div class="menu-area">
   <div class="container th-container3">
     <div class="row align-items-center justify-content-between">
-           <!-- Mobile Menu Toggle -->
+                   <div class="col-auto">
+
+     <div class="header-logo">
+       <a href="/Pages/default.aspx">
+         <img height="60" width="60" src="/assets/V1.svg" alt="Atek">
+       </a>
+     </div>
+
+   </div>
+
+      <!-- Desktop Menu -->
+      <div class="col d-none d-md-block text-center">
+        <nav class="main-menu">
+          <ul>
+            <asp:Literal ID="Litheader" runat="server"></asp:Literal>
+          </ul>
+        </nav>
+      </div>
+
+
+                   <!-- Mobile Menu Toggle -->
    <div class="col-auto d-md-none">
      <button class="th-menu-toggle th-menu-btn" type="button">
        <i class="fal fa-bars"></i>
@@ -172,27 +196,6 @@ Google Fonts
         </a>
       </div>
     </div>
-
-      <!-- Desktop Menu -->
-      <div class="col d-none d-md-block text-center">
-        <nav class="main-menu">
-          <ul>
-            <asp:Literal ID="Litheader" runat="server"></asp:Literal>
-          </ul>
-        </nav>
-      </div>
-
-   
-
-  
-           <div class="col-auto">
-
-     <div class="header-logo">
-       <a href="/Pages/default.aspx">
-         <img height="60" width="60" src="/assets/V1.svg" alt="Atek">
-       </a>
-     </div>
-   </div>
     </div>
   </div>
 </div>

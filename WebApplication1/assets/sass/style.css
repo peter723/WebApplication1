@@ -1,91 +1,4 @@
 ﻿@charset "UTF-8";
-/*
-Template Name: Atek
-Template URL: https://wordpress.themeholy.com//Tourm/ 
-Description: It Business and Consulting Service Html Template 
-Author: themeholy
-Author URI: https://themeforest.net/user/themeholy
-Version: 1.0.0 
-Last Update: 20-07-2025  
-*/
-/*=================================
-    CSS Index Here
-==================================*/
-/*
-
-01. Theme Base
-    1.1. Mixin
-    1.2. Function
-    1.3. Variable
-    1.4. Typography
-    1.5. Extend
-    1.7. Wordpress Default
-02. Reset
-    2.1. Container
-    2.2. Grid
-    2.3. Input
-    2.4. Slider
-    2.5. Mobile Menu
-03. Utilities
-    3.1. Preloader
-    3.2. Buttons
-    3.3. Titles
-    3.4. Common
-    3.6. Font
-    3.7. Background
-    3.8. Text Color
-    3.9. Overlay
-    3.10. Animation
-
-04. Template Style
-    4.1. Widget
-    4.2. Header
-    4.3. Footer
-    4.4. Breadcumb
-    4.5. Pagination
-    4.6. Blog
-    4.7. Comments
-    4.8. Hero Area
-    4.9. Error    
-    4.00. Popup Search
-    4.00. Popup Side Menu
-    4.00. Wocommerce
-    4.00. Products
-    4.00. Cart
-    4.00. Checkout
-    4.00. Wishlist
-    4.00. Contact
-    4.00. About
-    4.00. Team
-    4.00. Testimonial
-    4.00. Counter
-    4.00. Blog
-    4.00. Brand
-    4.00. Simple Sections
-    4.00. Why
-    4.00. Faq
-    4.00. Service
-    4.00. Process
-    4.00. Feature
-    4.00. Gallery
-    4.00. Category
-    4.00. CTA
-    4.00. Deal
-    4.00. Tab Menu
-    4.00. Particle 
-
-05. Spacing
-
-*/
-/*=================================
-    CSS Index End
-==================================*/
-/*================================= 
-   01. Theme Base
-==================================*/
-/*------------------- 1.1. Mixin -------------------*/
-/*------------------- 1.2. Function -------------------*/
-/*------------------- 1.3. Variable-------------------*/
 :root {
   --theme-color: #0B59DB;
   --primary-color: #0B59DB;
@@ -118,7 +31,6 @@ Last Update: 20-07-2025
   --ripple-ani-duration: 2s;
 }
 
-/*------------------- 1.5. Typography -------------------*/
 html,
 body {
   scroll-behavior: auto !important;
@@ -466,6 +378,91 @@ h6 {
   transform: translate(2px, 2px) scale(3);
 }
 
+/*
+Template Name: Atek
+Template URL: https://wordpress.themeholy.com//Tourm/ 
+Description: It Business and Consulting Service Html Template 
+Author: themeholy
+Author URI: https://themeforest.net/user/themeholy
+Version: 1.0.0 
+Last Update: 20-07-2025  
+*/
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Products
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Blog
+    4.00. Brand
+    4.00. Simple Sections
+    4.00. Why
+    4.00. Faq
+    4.00. Service
+    4.00. Process
+    4.00. Feature
+    4.00. Gallery
+    4.00. Category
+    4.00. CTA
+    4.00. Deal
+    4.00. Tab Menu
+    4.00. Particle 
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
+/*================================= 
+   01. Theme Base
+==================================*/
+/*------------------- 1.1. Mixin -------------------*/
 /*------------------- 1.6. Extend -------------------*/
 /*------------------- 1.7. Wordpress Default -------------------*/
 p.has-drop-cap {
@@ -2310,206 +2307,167 @@ input[type=time]::-webkit-calendar-picker-indicator {
 }
 
 /*------------------- 2.6. Mobile Menu -------------------*/
+/* --------------------
+   Mobile Menu Wrapper (Left Open)
+-------------------- */
 .th-menu-wrapper {
   position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.6);
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.7);
   z-index: 999999;
-  width: 0;
-  width: 100%;
-  height: 100%;
+  opacity: 0;
+  visibility: hidden;
   transition: all ease 0.8s;
-  opacity: 0;
-  visibility: hidden;
-}
-.th-menu-wrapper .mobile-logo {
-  padding-bottom: 30px;
-  padding-top: 40px;
-  display: block;
-  text-align: center;
-  background-color: red;
-}
-.th-menu-wrapper .mobile-logo svg {
-  max-width: 185px;
-}
-.th-menu-wrapper .th-menu-toggle {
-  border: none;
-  font-size: 22px;
-  position: absolute;
-  right: -16.5px;
-  top: 25px;
-  padding: 0;
-  line-height: 1;
-  width: 33px;
-  height: 33px;
-  line-height: 35px;
-  font-size: 18px;
-  z-index: 1;
-  color: var(--white-color);
-  background-color: var(--title-color);
-  border-radius: 50%;
-}
-.th-menu-wrapper .th-menu-toggle:hover {
-  background-color: var(--title-color);
-  color: var(--white-color);
-}
-.th-menu-wrapper .th-menu-area {
-  width: 100%;
-  max-width: 310px;
-  background-color: #fff;
-  border-right: 3px solid var(--title-color);
-  height: 100%;
-  position: relative;
-  left: -110%;
-  opacity: 0;
-  visibility: hidden;
-  transition: all ease 1s;
-  z-index: 1;
+  /* Logo */
+  /* Toggle Button (left side for LTR) */
+  /* Menu Drawer */
+  /* Menu Drawer */
 }
 .th-menu-wrapper.th-body-visible {
   opacity: 1;
   visibility: visible;
 }
 .th-menu-wrapper.th-body-visible .th-menu-area {
-  left: 0;
+  transform: translateX(0);
   opacity: 1;
   visibility: visible;
 }
+.th-menu-wrapper .mobile-logo {
+  padding: 40px 0 30px;
+  display: block;
+  text-align: center;
+  background-color: var(--title-color);
+}
+.th-menu-wrapper .mobile-logo svg,
+.th-menu-wrapper .mobile-logo img {
+  max-width: 180px;
+  height: auto;
+  filter: brightness(0) invert(1);
+}
+.th-menu-wrapper .th-menu-toggle {
+  border: none;
+  font-size: 18px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 33px;
+  height: 33px;
+  cursor: pointer;
+  border-radius: 50%;
+  color: var(--white-color);
+  background-color: var(--title-color);
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+.th-menu-wrapper .th-menu-toggle:hover {
+  opacity: 0.6;
+}
+.th-menu-wrapper .th-menu-area {
+  width: 100%;
+  background-color: var(--white-color);
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-110%);
+  transition: all ease 0.6s;
+  z-index: 100000;
+}
 
+.th-menu-toggle.th-menu-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+  padding: 8px;
+}
+.th-menu-toggle.th-menu-btn:hover {
+  opacity: 0.6;
+}
+.th-menu-toggle.th-menu-btn i {
+  font-size: 26px;
+  line-height: 1;
+}
+@media (min-width: 768px) {
+  .th-menu-toggle.th-menu-btn {
+    display: none;
+  }
+}
+
+/* --------------------
+   Mobile Menu Content
+-------------------- */
 .th-mobile-menu {
-  overflow-y: scroll;
+  overflow-y: auto;
   max-height: calc(100vh - 200px);
-  padding-bottom: 40px;
-  margin-top: 33px;
+  padding: 33px 0 40px;
+  cursor: pointer;
   text-align: left;
 }
 .th-mobile-menu ul {
+  list-style: none;
   margin: 0;
-  padding: 0 0;
+  padding: 0 40px;
 }
 .th-mobile-menu ul li {
-  border-bottom: 1px solid #fdedf1;
-  list-style-type: none;
+  border-bottom: 1px solid var(--smoke-color2);
+  cursor: pointer;
 }
-.th-mobile-menu ul li li:first-child {
-  border-top: 1px solid #fdedf1;
+.th-mobile-menu ul li:first-child {
+  border-top: 1px solid var(--smoke-color2);
 }
 .th-mobile-menu ul li a {
   display: block;
-  position: relative;
   padding: 12px 0;
-  line-height: 1.4;
   font-size: 16px;
+  cursor: pointer;
   text-transform: capitalize;
   color: var(--title-color);
-  padding-left: 0px;
+  transition: color 0.3s ease;
 }
-.th-mobile-menu ul li a:before {
-  content: "\f105";
-  font-family: var(--icon-font);
-  position: absolute;
-  left: 0;
-  top: 12px;
-  margin-right: 10px;
-  display: inline-block;
-  display: none;
+.th-mobile-menu ul li a:hover {
+  color: var(--theme-color);
 }
 .th-mobile-menu ul li.th-active > a {
   color: var(--theme-color);
+  font-weight: 600;
 }
-.th-mobile-menu ul li.th-active > a:before {
-  transform: rotate(90deg);
-}
-.th-mobile-menu ul li ul li:last-child {
-  border-bottom: none;
+.th-mobile-menu ul .menu-item-has-children > a {
+  position: relative;
 }
 .th-mobile-menu ul .menu-item-has-children > a .th-mean-expand {
   position: absolute;
-  right: 0;
   top: 50%;
-  font-weight: 400;
+  right: 0;
+  transform: translateY(-50%);
   font-size: 12px;
   width: 25px;
   height: 25px;
   line-height: 25px;
-  margin-top: -12.5px;
-  display: inline-block;
-  text-align: center;
+  border-radius: 50%;
   background-color: var(--smoke-color);
   color: var(--title-color);
-  box-shadow: 0 0 20px -8px rgba(173, 136, 88, 0.5);
-  border-radius: 50%;
-}
-.th-mobile-menu ul .menu-item-has-children > a .th-mean-expand:before {
-  content: "\f067";
-  font-family: var(--icon-font);
-}
-.th-mobile-menu ul .menu-item-has-children > a:after {
-  content: "\f067";
-  font-family: var(--icon-font);
-  width: 22px;
-  height: 22px;
-  line-height: 22px;
-  display: inline-block;
   text-align: center;
-  font-size: 12px;
-  border-radius: 50px;
-  background-color: var(--smoke-color);
-  float: right;
-  margin-top: 1px;
+  transition: background 0.3s ease;
 }
-.th-mobile-menu ul .menu-item-has-children.th-active > a .th-mean-expand:before {
-  content: "\f068";
-}
-.th-mobile-menu ul .menu-item-has-children.th-active > a:after {
-  content: "\f068";
-}
-.th-mobile-menu > ul {
-  padding: 0 40px;
-}
-.th-mobile-menu > ul > li:last-child {
-  border-bottom: none;
-}
-
-.th-menu-toggle {
-  width: 56px;
-  height: 56px;
-  padding: 0;
-  font-size: 20px;
-  border: none;
-  border-radius: 8px;
+.th-mobile-menu ul .menu-item-has-children > a .th-mean-expand:hover {
   background-color: var(--theme-color);
   color: var(--white-color);
-  display: inline-block;
 }
-.th-menu-toggle:hover {
-  background-color: var(--title-color);
-}
-.th-menu-toggle.style-text, .th-menu-toggle.style-text-white {
-  width: auto;
-  height: auto;
-  background-color: transparent;
-  color: var(--title-color);
-  font-size: 20px;
-}
-.th-menu-toggle.style-text i, .th-menu-toggle.style-text-white i {
-  margin-right: 10px;
-}
-.th-menu-toggle.style-text-white {
-  color: var(--white-color);
-}
-
 @media (max-width: 400px) {
-  .th-menu-wrapper .th-menu-area {
-    width: 100%;
-    max-width: 270px;
-  }
   .th-mobile-menu > ul {
     padding: 0 20px;
   }
+  .th-mobile-menu .th-menu-wrapper .th-menu-area {
+    max-width: 270px;
+  }
 }
+
 /*=================================
     03. Utilities
 ==================================*/
@@ -6711,12 +6669,6 @@ ol.wp-block-rss {
 .header-button .th-btn {
   margin-left: 10px;
   padding: 15px 29px;
-  /* Medium Large devices */
-}
-@media (max-width: 1299px) {
-  .header-button .th-btn {
-    display: none;
-  }
 }
 .header-button .icon-btn {
   line-height: var(--btn-size, 0);
@@ -6943,9 +6895,6 @@ ol.wp-block-rss {
   display: none;
 }
 .header-layout1 .menu-item.menu-item-type-custom .mega-menu-title a:after {
-  display: none;
-}
-.header-layout1 .menu-item.menu-item-type-custom .th-btn:after {
   display: none;
 }
 .header-layout1 .main-menu > ul > li > a:before {
@@ -8944,16 +8893,16 @@ blockquote.has-very-dark-gray-color {
   font-family: var(--body-font);
   position: relative;
   text-transform: capitalize;
-  margin-right: 12px;
+  margin-left: 12px;
 }
 .blog-meta span i,
 .blog-meta a i {
-  margin-right: 8px;
+  margin-left: 8px;
   color: var(--theme-color);
 }
 .blog-meta span:not(:last-child),
 .blog-meta a:not(:last-child) {
-  padding-right: 16px;
+  padding-left: 16px;
 }
 .blog-meta span:not(:last-child):after,
 .blog-meta a:not(:last-child):after {
@@ -8963,14 +8912,14 @@ blockquote.has-very-dark-gray-color {
   background-color: #999999;
   position: absolute;
   top: 50%;
-  right: 0;
+  left: 0;
   margin-top: -4px;
 }
 .blog-meta .author img {
   border-radius: 50%;
   width: 30px;
   height: 30px;
-  margin-right: 6px;
+  margin-left: 6px;
 }
 .blog-meta a:hover {
   color: var(--theme-color);
@@ -8980,22 +8929,22 @@ blockquote.has-very-dark-gray-color {
 @media (max-width: 1199px) {
   .blog-meta span,
   .blog-meta a {
-    margin-right: 15px;
+    margin-left: 15px;
   }
   .blog-meta span:not(:last-child),
   .blog-meta a:not(:last-child) {
-    padding-right: 15px;
+    padding-left: 15px;
   }
 }
 /* Extra small devices */
 @media (max-width: 575px) {
   .blog-meta span,
   .blog-meta a {
-    margin-right: 20px;
+    margin-left: 20px;
   }
   .blog-meta span:not(:last-child),
   .blog-meta a:not(:last-child) {
-    padding-right: 0;
+    padding-left: 0;
   }
   .blog-meta span:not(:last-child):after,
   .blog-meta a:not(:last-child):after {
@@ -9031,7 +8980,7 @@ blockquote.has-very-dark-gray-color {
 }
 .blog-inner-title i {
   color: var(--theme-color);
-  margin-right: 4px;
+  margin-left: 4px;
 }
 
 .blog-single {
@@ -9071,13 +9020,13 @@ blockquote.has-very-dark-gray-color {
 .blog-single .blog-meta a img,
 .blog-single .blog-meta a svg,
 .blog-single .blog-meta a i {
-  margin-right: 11px;
+  margin-left: 11px;
   color: #1C2D37;
 }
 .blog-single .blog-meta span:last-child,
 .blog-single .blog-meta a:last-child {
-  margin-right: 0;
-  padding-right: 0;
+  margin-left: 0;
+  padding-left: 0;
   border: 0;
 }
 .blog-single .blog-meta span:last-child:after,
@@ -9088,7 +9037,7 @@ blockquote.has-very-dark-gray-color {
   border-radius: 50%;
   width: 30px;
   height: 30px;
-  margin-right: 6px;
+  margin-left: 6px;
 }
 .blog-single .blog-content {
   margin: 0 0 0 0;
@@ -9221,7 +9170,7 @@ blockquote.has-very-dark-gray-color {
 }
 .page-meta .ratting i {
   color: #FFA944;
-  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .blog-list-single {
@@ -9946,6 +9895,12 @@ ul.comment-list:has(> .th-comment-item ~ .th-comment-item):first-child > .th-pos
   position: relative;
   z-index: 2;
   overflow: hidden;
+  /* Full height on large screens only */
+}
+@media (min-width: 1200px) {
+  .th-hero-wrapper {
+    height: 95vh;
+  }
 }
 
 .th-hero-bg {
@@ -18226,26 +18181,26 @@ span.select2-selection.select2-selection--single:focus {
   padding: 40px 0;
 }
 .contact-infobox-bottom .about-contact-grid:not(:last-child) {
-  padding-right: 56px;
-  border-right: 3px solid var(--white-color);
+  padding-left: 56px;
+  border-left: 3px solid var(--white-color);
   /* Medium Large devices */
   /* Large devices */
   /* Small devices */
 }
 @media (max-width: 1299px) {
   .contact-infobox-bottom .about-contact-grid:not(:last-child) {
-    padding-right: 22px;
+    padding-left: 22px;
   }
 }
 @media (max-width: 1199px) {
   .contact-infobox-bottom .about-contact-grid:not(:last-child) {
-    border-right: 0;
+    border-left: 0;
     border-bottom: 3px solid var(--white-color);
   }
 }
 @media (max-width: 767px) {
   .contact-infobox-bottom .about-contact-grid:not(:last-child) {
-    padding-right: 0;
+    padding-left: 0;
   }
 }
 .contact-infobox-bottom .about-contact-icon {

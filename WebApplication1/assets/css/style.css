@@ -1,91 +1,4 @@
 @charset "UTF-8";
-/*
-Template Name: Atek
-Template URL: https://wordpress.themeholy.com//Tourm/ 
-Description: It Business and Consulting Service Html Template 
-Author: themeholy
-Author URI: https://themeforest.net/user/themeholy
-Version: 1.0.0 
-Last Update: 20-07-2025  
-*/
-/*=================================
-    CSS Index Here
-==================================*/
-/*
-
-01. Theme Base
-    1.1. Mixin
-    1.2. Function
-    1.3. Variable
-    1.4. Typography
-    1.5. Extend
-    1.7. Wordpress Default
-02. Reset
-    2.1. Container
-    2.2. Grid
-    2.3. Input
-    2.4. Slider
-    2.5. Mobile Menu
-03. Utilities
-    3.1. Preloader
-    3.2. Buttons
-    3.3. Titles
-    3.4. Common
-    3.6. Font
-    3.7. Background
-    3.8. Text Color
-    3.9. Overlay
-    3.10. Animation
-
-04. Template Style
-    4.1. Widget
-    4.2. Header
-    4.3. Footer
-    4.4. Breadcumb
-    4.5. Pagination
-    4.6. Blog
-    4.7. Comments
-    4.8. Hero Area
-    4.9. Error    
-    4.00. Popup Search
-    4.00. Popup Side Menu
-    4.00. Wocommerce
-    4.00. Products
-    4.00. Cart
-    4.00. Checkout
-    4.00. Wishlist
-    4.00. Contact
-    4.00. About
-    4.00. Team
-    4.00. Testimonial
-    4.00. Counter
-    4.00. Blog
-    4.00. Brand
-    4.00. Simple Sections
-    4.00. Why
-    4.00. Faq
-    4.00. Service
-    4.00. Process
-    4.00. Feature
-    4.00. Gallery
-    4.00. Category
-    4.00. CTA
-    4.00. Deal
-    4.00. Tab Menu
-    4.00. Particle 
-
-05. Spacing
-
-*/
-/*=================================
-    CSS Index End
-==================================*/
-/*================================= 
-   01. Theme Base
-==================================*/
-/*------------------- 1.1. Mixin -------------------*/
-/*------------------- 1.2. Function -------------------*/
-/*------------------- 1.3. Variable-------------------*/
 :root {
   --theme-color: #0B59DB;
   --primary-color: #0B59DB;
@@ -118,7 +31,6 @@ Last Update: 20-07-2025
   --ripple-ani-duration: 2s;
 }
 
-/*------------------- 1.5. Typography -------------------*/
 html,
 body {
   scroll-behavior: auto !important;
@@ -477,6 +389,91 @@ h1 {
   transform: translate(2px, 2px) scale(3);
 }
 
+/*
+Template Name: Atek
+Template URL: https://wordpress.themeholy.com//Tourm/ 
+Description: It Business and Consulting Service Html Template 
+Author: themeholy
+Author URI: https://themeforest.net/user/themeholy
+Version: 1.0.0 
+Last Update: 20-07-2025  
+*/
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Products
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Blog
+    4.00. Brand
+    4.00. Simple Sections
+    4.00. Why
+    4.00. Faq
+    4.00. Service
+    4.00. Process
+    4.00. Feature
+    4.00. Gallery
+    4.00. Category
+    4.00. CTA
+    4.00. Deal
+    4.00. Tab Menu
+    4.00. Particle 
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
+/*================================= 
+   01. Theme Base
+==================================*/
+/*------------------- 1.1. Mixin -------------------*/
 /*------------------- 1.6. Extend -------------------*/
 /*------------------- 1.7. Wordpress Default -------------------*/
 p.has-drop-cap {
@@ -2327,7 +2324,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
 
 /*------------------- 2.6. Mobile Menu -------------------*/
 /* --------------------
-   Mobile Menu Wrapper (Arabic Static)
+   Mobile Menu Wrapper (Left Open)
 -------------------- */
 .th-menu-wrapper {
   position: fixed;
@@ -2338,7 +2335,8 @@ input[type=time]::-webkit-calendar-picker-indicator {
   visibility: hidden;
   transition: all ease 0.8s;
   /* Logo */
-  /* Toggle Button (right side for Arabic) */
+  /* Toggle Button (left side for LTR) */
+  /* Menu Drawer */
   /* Menu Drawer */
 }
 .th-menu-wrapper.th-body-visible {
@@ -2346,9 +2344,9 @@ input[type=time]::-webkit-calendar-picker-indicator {
   visibility: visible;
 }
 .th-menu-wrapper.th-body-visible .th-menu-area {
+  transform: translateX(0);
   opacity: 1;
   visibility: visible;
-  transform: translateX(0);
 }
 .th-menu-wrapper .mobile-logo {
   padding: 40px 0 30px;
@@ -2367,7 +2365,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
   font-size: 18px;
   position: absolute;
   top: 10px;
-  left: 10px;
+  right: 10px;
   width: 33px;
   height: 33px;
   cursor: pointer;
@@ -2382,14 +2380,16 @@ input[type=time]::-webkit-calendar-picker-indicator {
 }
 .th-menu-wrapper .th-menu-area {
   width: 100%;
-  max-width: 310px;
   background-color: var(--white-color);
   height: 100%;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
   opacity: 0;
   visibility: hidden;
-  transform: translateX(110%);
+  transform: translateX(-110%);
   transition: all ease 0.6s;
+  z-index: 100000;
 }
 
 .th-menu-toggle.th-menu-btn {
@@ -2423,7 +2423,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
   max-height: calc(100vh - 200px);
   padding: 33px 0 40px;
   cursor: pointer;
-  text-align: right;
+  text-align: left;
 }
 .th-mobile-menu ul {
   list-style: none;
@@ -2459,7 +2459,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
 .th-mobile-menu ul .menu-item-has-children > a .th-mean-expand {
   position: absolute;
   top: 50%;
-  left: 0;
+  right: 0;
   transform: translateY(-50%);
   font-size: 12px;
   width: 25px;
@@ -6696,10 +6696,6 @@ ol.wp-block-rss {
 .header-button .th-btn {
   margin-left: 10px;
   padding: 15px 29px;
-  /* Medium Large devices */
-}
-@media (max-width: 1299px) {
-
 }
 .header-button .icon-btn {
   line-height: var(--btn-size, 0);
@@ -6926,9 +6922,6 @@ ol.wp-block-rss {
   display: none;
 }
 .header-layout1 .menu-item.menu-item-type-custom .mega-menu-title a:after {
-  display: none;
-}
-.header-layout1 .menu-item.menu-item-type-custom .th-btn:after {
   display: none;
 }
 .header-layout1 .main-menu > ul > li > a:before {
@@ -8934,16 +8927,16 @@ blockquote.has-very-dark-gray-color {
   font-family: var(--body-font);
   position: relative;
   text-transform: capitalize;
-  margin-right: 12px;
+  margin-left: 12px;
 }
 .blog-meta span i,
 .blog-meta a i {
-  margin-right: 8px;
+  margin-left: 8px;
   color: var(--theme-color);
 }
 .blog-meta span:not(:last-child),
 .blog-meta a:not(:last-child) {
-  padding-right: 16px;
+  padding-left: 16px;
 }
 .blog-meta span:not(:last-child):after,
 .blog-meta a:not(:last-child):after {
@@ -8953,14 +8946,14 @@ blockquote.has-very-dark-gray-color {
   background-color: #999999;
   position: absolute;
   top: 50%;
-  right: 0;
+  left: 0;
   margin-top: -4px;
 }
 .blog-meta .author img {
   border-radius: 50%;
   width: 30px;
   height: 30px;
-  margin-right: 6px;
+  margin-left: 6px;
 }
 .blog-meta a:hover {
   color: var(--theme-color);
@@ -8970,22 +8963,22 @@ blockquote.has-very-dark-gray-color {
 @media (max-width: 1199px) {
   .blog-meta span,
 .blog-meta a {
-    margin-right: 15px;
+    margin-left: 15px;
   }
   .blog-meta span:not(:last-child),
 .blog-meta a:not(:last-child) {
-    padding-right: 15px;
+    padding-left: 15px;
   }
 }
 /* Extra small devices */
 @media (max-width: 575px) {
   .blog-meta span,
 .blog-meta a {
-    margin-right: 20px;
+    margin-left: 20px;
   }
   .blog-meta span:not(:last-child),
 .blog-meta a:not(:last-child) {
-    padding-right: 0;
+    padding-left: 0;
   }
   .blog-meta span:not(:last-child):after,
 .blog-meta a:not(:last-child):after {
@@ -9021,7 +9014,7 @@ blockquote.has-very-dark-gray-color {
 }
 .blog-inner-title i {
   color: var(--theme-color);
-  margin-right: 4px;
+  margin-left: 4px;
 }
 
 .blog-single {
@@ -9061,13 +9054,13 @@ blockquote.has-very-dark-gray-color {
 .blog-single .blog-meta a img,
 .blog-single .blog-meta a svg,
 .blog-single .blog-meta a i {
-  margin-right: 11px;
+  margin-left: 11px;
   color: #1C2D37;
 }
 .blog-single .blog-meta span:last-child,
 .blog-single .blog-meta a:last-child {
-  margin-right: 0;
-  padding-right: 0;
+  margin-left: 0;
+  padding-left: 0;
   border: 0;
 }
 .blog-single .blog-meta span:last-child:after,
@@ -9078,7 +9071,7 @@ blockquote.has-very-dark-gray-color {
   border-radius: 50%;
   width: 30px;
   height: 30px;
-  margin-right: 6px;
+  margin-left: 6px;
 }
 .blog-single .blog-content {
   margin: 0 0 0 0;
@@ -9211,7 +9204,7 @@ blockquote.has-very-dark-gray-color {
 }
 .page-meta .ratting i {
   color: #FFA944;
-  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .blog-list-single {
@@ -9940,6 +9933,12 @@ ul.comment-list:has(> .th-comment-item ~ .th-comment-item):first-child > .th-pos
   position: relative;
   z-index: 2;
   overflow: hidden;
+  /* Full height on large screens only */
+}
+@media (min-width: 1200px) {
+  .th-hero-wrapper {
+    height: 95vh;
+  }
 }
 
 .th-hero-bg {
@@ -18245,26 +18244,26 @@ span.select2-selection.select2-selection--single:focus {
   padding: 40px 0;
 }
 .contact-infobox-bottom .about-contact-grid:not(:last-child) {
-  padding-right: 56px;
-  border-right: 3px solid var(--white-color);
+  padding-left: 56px;
+  border-left: 3px solid var(--white-color);
   /* Medium Large devices */
   /* Large devices */
   /* Small devices */
 }
 @media (max-width: 1299px) {
   .contact-infobox-bottom .about-contact-grid:not(:last-child) {
-    padding-right: 22px;
+    padding-left: 22px;
   }
 }
 @media (max-width: 1199px) {
   .contact-infobox-bottom .about-contact-grid:not(:last-child) {
-    border-right: 0;
+    border-left: 0;
     border-bottom: 3px solid var(--white-color);
   }
 }
 @media (max-width: 767px) {
   .contact-infobox-bottom .about-contact-grid:not(:last-child) {
-    padding-right: 0;
+    padding-left: 0;
   }
 }
 .contact-infobox-bottom .about-contact-icon {

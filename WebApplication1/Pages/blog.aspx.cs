@@ -57,7 +57,9 @@ namespace WebApplication1.Pages
                                 Articls.Text += "<h2 class=\"blog-title\">";
                                 Articls.Text += " <a href=\"blog-details.aspx?Title="+ Title_AR + "\">" + Title_AR + "</a></h2>";
                                 Articls.Text += "<p class=\"blog-text\">"+ Description + "</p>";
-                                Articls.Text += " <a href=/blog-details.aspx?Title="+ Title_AR + "\" class=\"th-btn style4 th-icon\"> المزيد <i class=\"fa-light fa-arrow-right-long\"></i></a>";
+                                Articls.Text += "<div class=\"text-start\">";
+                                Articls.Text += "<a href=\"/blog-details.aspx?Title=" + Title_AR + "\" class=\"th-btn style4 th-icon\">المزيد <i class=\"fa-light fa-arrow-right-long\"></i></a>";
+                                Articls.Text += "</div>";
                                 Articls.Text += " </div> ";
                                 Articls.Text += " </div> ";
 

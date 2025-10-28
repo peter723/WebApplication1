@@ -7,7 +7,7 @@
     <!--==============================
 Hero Area
 ==============================-->
-    <div class="th-hero-wrapper hero-8 overflow-hidden" id="hero" data-bg-src="/assets/img/bg/hero_bg_8_1.png">
+    <div class="th-hero-wrapper hero-8 overflow-hidden " id="hero" data-bg-src="/assets/img/bg/hero_bg_8_1.png">
         <div class=" th-slider hero-slider-8" id="heroSlide8">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">

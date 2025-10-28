@@ -271,15 +271,15 @@ blockquote.has-very-dark-gray-color {
         font-family: $body-font;
         position: relative;
         text-transform: capitalize;
-        margin-right: 12px;
+        margin-left: 12px;
 
         i {
-            margin-right: 8px;
+            margin-left: 8px;
             color: $theme-color;
         }
 
         &:not(:last-child) {
-            padding-right: 16px;
+            padding-left: 16px;
 
             &:after {
                 content: "";
@@ -288,7 +288,7 @@ blockquote.has-very-dark-gray-color {
                 background-color: #999999;
                 position: absolute;
                 top: 50%;
-                right: 0;
+                left: 0;
                 margin-top: -4px;
             }
         }
@@ -299,7 +299,7 @@ blockquote.has-very-dark-gray-color {
             border-radius: 50%;
             width: 30px;
             height: 30px;
-            margin-right: 6px;
+            margin-left: 6px;
         }
     }
 
@@ -313,10 +313,10 @@ blockquote.has-very-dark-gray-color {
 
         span,
         a {
-            margin-right: 15px;
+            margin-left: 15px;
 
             &:not(:last-child) {
-                padding-right: 15px;
+                padding-left: 15px;
             }
         }
     }
@@ -327,10 +327,10 @@ blockquote.has-very-dark-gray-color {
 
         span,
         a {
-            margin-right: 20px;
+            margin-left: 20px;
 
             &:not(:last-child) {
-                padding-right: 0;
+                padding-left: 0;
 
                 &:after {
                     display: none;
@@ -371,7 +371,7 @@ blockquote.has-very-dark-gray-color {
 
     i {
         color: $theme-color;
-        margin-right: 4px;
+        margin-left: 4px;
     }
 }
 
@@ -386,7 +386,8 @@ blockquote.has-very-dark-gray-color {
         font-weight: 600;
         margin-bottom: 20px;
     }
-    &.blog-2{
+
+    &.blog-2 {
         padding: 40px;
         border-radius: 10px;
     }
@@ -407,20 +408,20 @@ blockquote.has-very-dark-gray-color {
             font-family: $body-font;
             position: relative;
             // margin-right: 15px;
-            // padding-right: 15px;
+            // padding-left: 15px;
             // border-right: 1px solid #1C2D37;
             line-height: normal;
 
             img,
             svg,
             i {
-                margin-right: 11px;
+                margin-left: 11px;
                 color: #1C2D37;
             }
 
             &:last-child {
-                margin-right: 0;
-                padding-right: 0;
+                margin-left: 0;
+                padding-left: 0;
                 border: 0;
 
                 &:after {
@@ -434,7 +435,7 @@ blockquote.has-very-dark-gray-color {
                 border-radius: 50%;
                 width: 30px;
                 height: 30px;
-                margin-right: 6px;
+                margin-left: 6px;
             }
         }
     }
@@ -457,7 +458,7 @@ blockquote.has-very-dark-gray-color {
         line-height: 1;
     }
 
-    & .th-btn{
+    & .th-btn {
         border: 1px solid $border-color;
     }
 
@@ -584,9 +585,8 @@ blockquote.has-very-dark-gray-color {
 
         i {
             color: #FFA944;
-            margin-right: 10px;
+            margin-left: 10px;
         }
-
     }
 }
 
